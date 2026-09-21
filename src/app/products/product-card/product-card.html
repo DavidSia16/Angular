@@ -1,0 +1,25 @@
+<mat-card class="product-card">
+    <mat-card-header>
+       <mat-card-title>{{ product().name}}</mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+        @if(product().originalPrice) {
+        <span class="sale-badge">On sale</span>
+        <p class="price-row">
+            <span class="current-price"> {{ product().price}}</span>
+            <span class="original-price"> {{ product().originalPrice}}</span>
+          <span></span>
+        </p>
+        } @else {
+          <p class="price-row">
+           <span class="current-price"> {{ product().price}}</span>
+          </p>
+        }
+      <p>{{ product().description}}</p>
+    </mat-card-content>
+
+    <mat-card-content>
+        <button matButton (click)="onAddToCard()"> {{addButtonLabel()}}</button>
+    </mat-card-content>
+</mat-card>
