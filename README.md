@@ -29,8 +29,3 @@ Antes de começar, você precisará ter instalado em sua máquina:
 - [Node.js](https://nodejs.org/) (Versão LTS recomendada)
 - [Angular CLI](https://angular.dev/tools/cli)
 
-### Passo a passo
-
-1. **Clonar o repositório:**
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
