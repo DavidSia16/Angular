@@ -16,7 +16,6 @@ export class ProductCard {
     readonly addToCart = output<Product>();
 
     protected onAddToCard() {
-        console.log('Button was clicked');
         this.addToCart.emit(this.product());
     }
 }
